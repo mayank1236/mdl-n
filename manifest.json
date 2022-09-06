@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "main.css": {
+      "files": ["styles/main.scss"],
+      "main": false
+    },
+    "global.css": {
+      "files": ["styles/global.scss"],
+      "main": false
+    },
+    "old.css": {
+      "files": ["css/*.css"],
+      "main": false
+    },
+
+    "main.js": {
+      "files": ["scripts/sections/*.js", "scripts/main.js"],
+      "main": false
+    },
+    "plugins.js": {
+      "files": ["scripts/plugins/*.js"],
+      "main": false
+    },
+    "global.js": {
+      "files": ["scripts/global/*.js"],
+      "main": false
+    }
+  },
+  "paths": {
+    "source": "assets/",
+    "dist": "dist/"
+  },
+  "config": {
+    "devUrl": "dzs.test/",
+    "minify": true
+  }
+}

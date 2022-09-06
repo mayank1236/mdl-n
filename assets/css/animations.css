@@ -1,0 +1,72 @@
+/* Navbar */
+.nav-up {
+    top: -100%;
+    animation-name: navUp;
+    animation-duration: 0.5s;
+}
+
+.nav-down {
+    top: 0%;
+    animation-name: navDown;
+    animation-duration: 0.3s;
+}
+
+@keyframes navUp {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+@keyframes navDown {
+    0% {
+        top: -100%;
+     }
+    
+     100% {
+        top: 0%;
+     }
+}
+
+/* Page Nav */
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.bounce-up {
+    animation-name: pagenav-up;
+    animation-duration: 0.5s;
+}
+
+.bounce-down {
+    animation-name: pagenav-down;
+    animation-duration: 0.3s;
+}
+
+@keyframes pagenav-down {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+@keyframes pagenav-up {
+    0% {
+        top: 10%;
+    }
+
+    100% {
+        top: 10;
+    }
+}
+
+
+

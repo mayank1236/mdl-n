@@ -1,0 +1,176 @@
+@import "sections/test.scss";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Nav Button */
+@mixin theme($active-color: #00a5d9) {
+    color: $active-color;
+    font-size: 15px;
+    display: inline;
+}
+
+.active {
+    @include theme;
+}
+
+.navbar {
+    nav {
+        .nav-list {
+            .nav-item {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.banner {
+    padding: 20px 90px;
+    background-image: linear-gradient(to right, rgb(0, 108, 172), #00a1d6);
+    color: white;
+    
+    .banner-container {
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        * {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 15px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+}
+
+.about {
+    .about-content {
+        * {
+            margin-bottom: 10px;
+        }
+    }
+
+    .benefit-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #414141;
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        li {
+            margin-top: 50px;
+            margin-right: 10px;
+            min-width: 277px;
+
+            .benefit {
+
+                img {
+                    height: 105px;
+                    width: 105px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.63;
+                    letter-spacing: normal;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+.page-nav {
+    .nav-link {
+        cursor: pointer;
+    }
+
+    .selected-item {
+        display: none;
+    }
+
+    .select {
+        cursor: pointer;
+        display: none;
+        img{
+            width: 25px;
+        }
+    }
+}
+
+.pagenav-next {
+    width: 100%;
+}
+
+.product-container{
+
+    .product-section {
+    
+        .product-card {
+        
+            .wrapper{
+        
+                * {
+                    margin-bottom: 10px;
+                }
+        
+                .product-cta {
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+
+    .footer-content{
+
+        * {
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+
+@import "sections/responsive.scss";
